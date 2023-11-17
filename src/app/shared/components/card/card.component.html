@@ -1,0 +1,24 @@
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <ng-container *ngFor="let item of cardBanner;let i=index">
+      <div class="carousel-item" [ngClass]="i==0? 'active':null">
+        <a [routerLink]="['/details', item.mal_id]"><img class="d-block w-100" src="{{item.images.jpg.large_image_url}}" alt="{{item.title}}"></a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="title">{{item.title}}</h5>
+          <ul>
+          <ng-container *ngFor="let x of item.genres">
+            <li>{{x.name}}</li>
+          </ng-container></ul>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

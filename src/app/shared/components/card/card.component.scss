@@ -1,0 +1,31 @@
+.carousel-inner {
+  padding: 0vh 27vw 0vh 27vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2125;
+  background-image: linear-gradient(180deg, black,rgb(60, 60, 60),black,rgb(50, 50, 50),rgb(0, 0, 0),#615630,black,rgb(30, 30, 30),black,rgb(20, 20, 20), black);
+
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-inner {padding: 0vh 10vw 0vh 10vw;}
+}
+img{
+  height: 65vh;
+  border-radius: 10px;
+  object-fit:fill;
+  right: 0;
+  filter: brightness(1.15);
+}
+
+ul{
+  text-decoration: none;
+  list-style:none;
+  color: #ffdd95;
+  background-color: rgba(0, 0, 0, 0.379);
+}
+
+.title{
+  background-color: #ffdd95;
+  color: black;
+}

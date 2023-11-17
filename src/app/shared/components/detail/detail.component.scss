@@ -1,0 +1,21 @@
+*{
+  color: white;
+}
+.card{
+  align-self: center;
+  justify-content: center;
+  margin: 3vw;
+  button{
+    background-color:#ffdd95;
+    color: black;
+    padding: 1vh;
+    margin: 5px;
+    font-weight: 500;
+  }
+}
+img{
+  height: 50vh;
+  border: solid rgb(81, 81, 81) 2px;
+  margin:4vw;
+  border-radius: 0.5vw;
+}

@@ -1,0 +1,37 @@
+<div class="card-group bg-dark md-12">
+  <div class="card bg-dark">
+    <img src="{{details.images.jpg.large_image_url}}" alt="Title Card Image">
+    
+  </div>
+  <div class="card bg-dark">
+    <div class="card-body">
+      <h1>{{details.title}}</h1>
+        <ul>
+          <li>{{details.rating}}</li>
+          <li>{{details.type}}</li>
+          <li>{{details.duration}}</li>
+        </ul>
+        <div class="two-button">
+        <button class="trailer">Watch Trailer</button>
+        <button class="watch" >Watch {{details.type}}</button>
+        </div>
+        <p>{{details.synopsis}}</p>
+    </div>
+  </div>
+  <div class="card bg-dark">
+    <div class="card-body">
+      <h6>Japanese : {{details.title_japanese}}</h6>
+        <h6>Year : {{details.year}}</h6>
+        <h6>Episodes :{{details.episodes}}</h6>
+        <h6>Duration : {{details.duration}}</h6>
+        <h6>Status : {{details.status}}</h6>
+        <h6>Season : {{details.season}}</h6>
+        <h6>Score : {{details.score}}</h6>
+        <div>
+          
+        </div >
+        <h6>Studios : {{details.studios[0].name}}</h6>
+        <h6>Producers : {{details.producers[0].name}}</h6>
+    </div>
+  </div>
+</div>
